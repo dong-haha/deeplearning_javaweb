@@ -1,0 +1,9 @@
+import cv2
+import plantid
+
+image_filename="./images/1.jpg"
+plant_identifier = plantid.PlantIdentifier()
+image = cv2.imread(image_filename)
+outputs = plant_identifier.identify(image, topk=5)
+if outputs['status'] == 0:
+    print(outputs)

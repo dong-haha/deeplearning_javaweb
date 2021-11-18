@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-image: url("../img/tensorflow.jpg");
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/* top layer */
+.top {
+    /* flex takes no line break by default */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 3px solid rgba(36, 52, 86, 0.75);
+}
+.top-logo {
+    padding: 8px 16px;
+    margin-left: 20px;
+}
+.top-navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.top-naviBar {
+    padding: 16px 40px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+.top-naviBar, .footer-link {
+    transition: all 0.5s;
+}
+.top-naviBar:hover {
+    color: black;
+}
+
+.container1{
+	margin-top: 50px;
+}
+
+/* inter layer */
+.mezzanine {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/* introduction block */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* inherit form body */
+    flex: 1;
+    padding: 39.72px 64.27px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.intro-title {
+    color: white;
+    font-size: 40px;
+}
+.intro-text {
+    margin: 20px 0px;
+    color: inherit;
+    font-size: 24.72px;
+}
+.service {
+    /* inherit form body */	
+    padding: 10px;
+    background-color: rgba(209, 254, 251, 0.8);
+    color: black;
+    font-size: 18.54px;
+    font-weight: bold;
+}
+
+.form_1 {
+	margin-left:20%;
+}
+
+.result {
+    /* inherit form body */
+    flex: 2;
+    padding: 40px 64.27px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* allow flex elements wrap */
+    flex-wrap: wrap;
+    color: black;
+    font-size: 18.54px;
+    font-weight: bold;
+}

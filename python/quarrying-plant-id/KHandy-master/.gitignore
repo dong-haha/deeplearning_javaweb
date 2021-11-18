@@ -1,0 +1,12 @@
+*.pyc
+*.jpg
+*.json
+*.pkl
+*.swp
+archive.py
+_run_*.py
+
+local/
+_local/
+__pycache__/
+*.egg-info/

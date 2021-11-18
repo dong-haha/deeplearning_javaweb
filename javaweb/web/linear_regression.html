@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>linear_regression</title>
+	<script src="js/echarts.min.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="js/myecharts_func.js"></script>
+	<script src="./js/1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index1.css" />
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+</head>
+
+<body>
+
+<div class="top">
+    <div class="top-logo">
+        <a style="padding: 16px 8px;" href="/home">
+            <img src="img/logo.png" style="height: 30px;">
+        </a>
+    </div>
+    <div class="top-navi">
+        <a class="top-naviBar" href="/home">首页</a> 
+        <a class="top-naviBar" href="/help" target="_blank">帮助</a>
+        <a class="top-naviBar" href="/history" target="_blank">关于</a>
+    </div>
+</div>
+
+
+
+
+
+<div class="container container1 ">
+<div class="service">
+	<div class="form_1">
+	<form>
+	    <div class="form-group">
+	      <label >请输入 X :</label>  <br/>
+	      <textarea id="x" class="form-control" name="x_data" rows="5" style="width: 60%"></textarea>
+	    </div>
+		
+		
+	    <div class="form-group">
+	      <label>请输入 Y :</label>  <br/>
+		   <textarea id="y" class="form-control" name="y_data" rows="5" style="width: 60%"></textarea>
+	    </div>
+		
+		<div class="form-group"  id="hide_input">
+		    <span>学习率 α :&nbsp;&nbsp;</span>
+			<input type="text" name="priMin"  value="0.01" id="a1">  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span>训练次数  :&nbsp;&nbsp;</span>
+			<input type="text" name="priMin" value="500" id="a2" > <br/><br/>
+			
+	    </div>
+	    
+	  </form>
+	
+	<button type="button" class="btn btn-secondary" id="button_hide">显示/隐藏更多参数</button>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button type="button" class="btn btn-info" id="button_example">使用随机测试数据</button>
+	<br/><br/>
+    <button  class="btn btn-primary" id="button_submit">提交</button>
+	</div>
+
+</div>
+	
+</div>
+
+
+<div class="container">
+<div class="result" id="hide_result">
+
+	<h5 class="text-primary">结果展示</h5>
+	<HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="100%" color=#987cb9 SIZE=5>
+	<br/>
+	<div style="width: 100%;text-align: center;" id="hide_loading">
+	<button class="btn btn-primary" disabled>
+    <span class="spinner-border spinner-border-sm"></span>
+    Loading..
+  </button><br/><br/>
+  </div>
+    <!-若结果出错，提供错误数据的展示->
+    <div id="error_data">
+        <button type="button" class="btn btn-secondary" id="error_data_button">显示错误数据参数</button> <br/><br/>
+        <textarea id="error_data_show"  style="width: 80%"></textarea>
+    </div>
+  
+  
+  <div id="echarts_1" style="width: 80%;height:400px;"></div>
+  <div id="echarts_2" style="width: 80%;height:400px;"></div>
+  <div id="echarts_3" style="width: 80%;height:400px;"></div>
+  <div id="echarts_4" style="width: 80%;height:400px;"></div>
+</div>	
+
+</div>
+
+
+</body>
+</html>

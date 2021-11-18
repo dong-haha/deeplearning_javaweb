@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>plant</title>
+	<script src="./js/popper.min.js"></script>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+	<script src="./js/json_result.js"></script>
+	<script src="./js/file_examples.js"></script>
+    <script src="./js/plant.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index1.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/title.ico">
+
+</head>
+
+<body>
+
+<div class="top">
+    <div class="top-logo">
+        <a style="padding: 16px 8px;" href="/home">
+            <img src="img/logo.png" style="height: 30px;">
+        </a>
+    </div>
+    <div class="top-navi">
+        <a class="top-naviBar" href="/home">首页</a>
+        <a class="top-naviBar" href="/help" target="_blank">帮助</a>
+        <a class="top-naviBar" href="/history" target="_blank">关于</a>
+    </div>
+</div>
+
+
+
+<div class="container container1">
+    <div class="service">
+        <div class="form_1">
+
+            <h5>请上传一张植物图片:</h5><br/><br/>
+            <input type="file" name="photo" id="photo" value="" placeholder="数字照片">
+            <input type="button" onclick="postData();" value="提交" class="btn btn-primary">
+        </div>
+		
+		<div class="dropdown"  style="margin-left: 20%;margin-top: 30px;">
+		    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+		      使用测试图片
+		    </button>
+		    <div class="dropdown-menu">
+		      <button  onclick="example_submit('example1_plant.png','plant')" class="dropdown-item">图片一</button>
+		      <button  onclick="example_submit('example2_plant.png','plant')" class="dropdown-item">图片二</button>
+		      <button  onclick="example_submit('example3_plant.png','plant')" class="dropdown-item">图片三</button>
+		    </div>
+		  </div>
+		
+
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="result" id="hide_result">
+
+        <h5 class="text-primary">结果展示</h5>
+        <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="100%" color=#987cb9 SIZE=5>
+        <br/>
+        <div style="width: 100%;text-align: center;" id="hide_loading">
+            <button class="btn btn-primary" disabled>
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading..
+            </button><br/><br/>
+        </div>
+
+
+        <div id="hide_image">
+            <br/>
+            <h3 id="predict_result" class="text-danger"></h3><br/><br/>
+            <p>原始图像:</p><br/>
+            <img src="" alt="传入图片" id="input_image" width="400px">
+            <br/>
+        </div>
+
+        <div id="table_result" style="width: 100%;margin-top: 100px">
+            <h2>种的预测:</h2>
+		<table class="table  table-hover" id="plant_table_result" style="width: 80%;">
+		     <thead><tr class="table-primary"><th>Chinese Name</th><th>Latin Name</th><th>Confidence</th></tr>
+		     <tbody><tr class="table-danger"><td></td><td></td><td></td></tr>
+		     <tr class="table-success"><td></td><td></td><td></td></tr>
+		     <tr class="table-success"><td></td><td></td><td></td></tr>
+		     <tr class="table-active"><td></td><td></td><td></td></tr>
+		     <tr class="table-active"><td></td><td></td><td></td></tr> </table>
+			 
+		<h2>属的预测:</h2>
+		<table class="table  table-hover" id="plant_table_genus" style="width: 80%;">
+		     <thead><tr class="table-primary"><th>Chinese Name</th><th>Latin Name</th><th>Confidence</th></tr>
+		     <tbody><tr class="table-danger"><td></td><td></td><td></td></tr>
+		     <tr class="table-success"><td></td><td></td><td></td></tr>
+		     <tr class="table-success"><td></td><td></td><td></td></tr>
+		     <tr class="table-active"><td></td><td></td><td></td></tr>
+		     <tr class="table-active"><td></td><td></td><td></td></tr></table>
+			 
+		<h2>科的预测:</h2>
+		<table class="table  table-hover" id="plant_table_family" style="width: 80%;">
+		     <thead><tr class="table-primary"><th>Chinese Name</th><th>Latin Name</th><th>Confidence</th></tr>
+		     <tbody><tr class="table-danger"><td></td><td></td><td></td></tr>
+		     <tr class="table-success"><td></td><td></td><td></td></tr>
+		     <tr class="table-success"><td></td><td></td><td></td></tr>
+		     <tr class="table-active"><td></td><td></td><td></td></tr>
+		     <tr class="table-active"><td></td><td></td><td></td></tr></table>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

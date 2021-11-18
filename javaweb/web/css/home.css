@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-image: url("../img/tensorflow.jpg");
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+/* footer */
+footer {
+    padding: 24.72px 64.27px;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgb(36, 52 , 86);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.footer-link {
+    color: inherit;
+    margin-left: 100px;
+}
+.footer-link:hover {
+    color: white;
+}
+/* top layer */
+.top {
+    
+    /* flex takes no line break by default */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 3px solid rgba(36, 52, 86, 0.75);
+}
+.top-logo {
+    padding: 8px 16px;
+    margin-left: 20px;
+}
+.top-navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.top-naviBar {
+    padding: 16px 40px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+.top-naviBar, .footer-link {
+    transition: all 0.5s;
+}
+.top-naviBar:hover {
+    color: black;
+}
+/* inter layer */
+.mezzanine {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/* introduction block */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* inherit form body */
+    flex: 1;
+    padding: 39.72px 64.27px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.intro-title {
+    color: white;
+    font-size: 40px;
+}
+.intro-text {
+    margin: 20px 0px;
+    color: inherit;
+    font-size: 18px;
+}
+.service {
+    /* inherit form body */
+    flex: 2;
+    padding: 40px 64.27px;
+    text-align: center;
+    background-color: rgba(209, 254, 251, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* allow flex elements wrap */
+    flex-wrap: wrap;
+    color: black;
+    font-size: 18.54px;
+    font-weight: bold;
+}
+.service-block {
+	 background-color: rgba(255, 255, 255, 0.7);
+    margin: 16.18px;
+    width: 25%;
+	max-width: 400px;
+	min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 9px;
+    box-shadow: -2px 2px 9px rgba(36, 52, 86, 0.25);
+    /* cutoff overflow part of input */
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.service-block:hover {
+    border-radius: 30px;
+    box-shadow: -2px 2px 18px rgba(0, 0, 0, 0.25);
+}
+.service-upblock {
+    padding: 30px 0px;
+    border-radius: 9px 9px 0px 0px;
+
+}
+.service-downblock {
+    min-height: 60px;
+    padding: 11.45px 18.54px;
+    background-color: rgba(36, 52, 86, 0.25);
+    border-radius: 0px 0px 9px 9px;
+    font-weight: lighter;
+    text-align: center;
+}
+.service-upblock, .service-downblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.service a {
+    color: black;
+}
+.service a:hover {
+    color: rgb(28, 37 ,59);
+}

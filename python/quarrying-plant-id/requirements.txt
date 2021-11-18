@@ -1,0 +1,5 @@
+opencv-python>=4.4
+pillow
+onnxruntime
+flask
+gevent

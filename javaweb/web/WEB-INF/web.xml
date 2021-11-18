@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>xyz.hzau.controller.Oneservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/one</url-pattern>
+    </servlet-mapping>
+
+<!-- 手写数字识别的接口-->
+    <servlet>
+        <servlet-name>UploadFile</servlet-name>
+        <servlet-class>xyz.hzau.controller.UploadNumber</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadFile</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
+    <!-- 植物识别的接口-->
+    <servlet>
+        <servlet-name>Upload_plant</servlet-name>
+        <servlet-class>xyz.hzau.controller.UploadPlant</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Upload_plant</servlet-name>
+        <url-pattern>/uploadPlant</url-pattern>
+    </servlet-mapping>
+
+    <!-- 昆虫识别的接口-->
+    <servlet>
+        <servlet-name>Upload_insect</servlet-name>
+        <servlet-class>xyz.hzau.controller.UploadInsect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Upload_insect</servlet-name>
+        <url-pattern>/uploadInsect</url-pattern>
+    </servlet-mapping>
+
+
+    <!--    yolo3接口-->
+    <servlet>
+        <servlet-name>yolo3</servlet-name>
+        <servlet-class>xyz.hzau.controller.Yolo3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>yolo3</servlet-name>
+        <url-pattern>/uploadyolo3</url-pattern>
+    </servlet-mapping>
+
+<!--    例子识别接口-->
+    <servlet>
+        <servlet-name>example</servlet-name>
+        <servlet-class>xyz.hzau.controller.ExampleUpload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>example</servlet-name>
+        <url-pattern>/example_upload</url-pattern>
+    </servlet-mapping>
+</web-app>
