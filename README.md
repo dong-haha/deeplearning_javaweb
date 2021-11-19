@@ -15,10 +15,10 @@ sh文件是为了java调用python而写。（这是一种java调用python的方�
 ## 复现
 除非和我的环境一模一样，否则几乎不能完全复现。
 #### 1.有IDEA，linux服务器，懂python，Javaweb
-先用idea导入javaweb文件夹，编译出war包，放到linux的tomcat下，重启。
-在linux下： 1. conda create 五个环境，每个对应一个项目。环境名看每个对应sh文件，需要哪些包自己想办法找
-           2.改路径，sh文件里面的路径改一下，或许python里的路径有些也要改
-           3.补全文件。YOLO3，flower下有些文件太大，没上传，能在github上找到，毕竟我也是clone的  
+先用idea导入javaweb文件夹，编译出war包，放到linux的tomcat下，重启。  
+在linux下： 1. conda create 五个环境，每个对应一个项目。环境名看每个对应sh文件，需要哪些包自己想办法找  
+           2.改路径，sh文件里面的路径改一下，或许python里的路径有些也要改,java也要改    
+           3.补全文件。YOLO3，flower下有些文件太大，没上传，能在github上找到，毕竟我也是clone的   
 #### 2.没有IDEA，不会web,会python
 你可能无法使用Javaweb功能，但可以运行python项目。依旧conda出每个环境，然后进入对应文件夹，运行py文件。 
 #### 3.没学过python
@@ -26,4 +26,4 @@ sh文件是为了java调用python而写。（这是一种java调用python的方�
 如果在文件里看到的，返回上层目录，右击鼠标，选择删除。
 
 ## 网站
-hzau.xyz/deeplearning
+http://hzau.xyz/deeplearning
