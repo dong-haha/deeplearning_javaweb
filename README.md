@@ -1,6 +1,7 @@
 ## 概述
-本项目为人工神经网络课程的结课论文而设计。  
-主要将几个深度学习项目部署到网站 （植物、昆虫识别、yolo3目标检测、手写数字等） （plant  yolo3 insect deeplearning）  
+本项目为大三上学期的人工神经网络课程的结课论文而设计。  
+主要将几个深度学习项目部署到网站 （植物、昆虫识别、yolo3目标检测、手写数字等） （plant  yolo3 insect deeplearning）   
+前后端均未使用框架，代码简单，适合入门，重点放在python深度学习项目。
 ## 参考
 植物识别：https://github.com/quarrying/quarrying-plant-id
 
@@ -22,8 +23,7 @@ sh文件是为了java调用python而写。（这是一种java调用python的方�
 #### 2.没有IDEA，不会web,会python
 你可能无法使用Javaweb功能，但可以运行python项目。依旧conda出每个环境，然后进入对应文件夹，运行py文件。 
 #### 3.没学过python
-如果在github看到的，请点击标签页的关闭。  
-如果在文件里看到的，返回上层目录，右击鼠标，选择删除。
+建议访问网站
 
 ## 网站
 http://hzau.xyz/deeplearning
