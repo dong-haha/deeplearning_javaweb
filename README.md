@@ -26,4 +26,4 @@ sh文件是为了java调用python而写。（这是一种java调用python的方�
 建议访问网站
 
 ## 网站
-http://hzau.xyz/deeplearning
+1.15.66.61/deeplearning
